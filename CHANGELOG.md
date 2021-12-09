@@ -4,7 +4,7 @@
 
 - Glob pattern support
 - Unit Tests
-- Log versio
+- Log version
 
 ### Fixed
 
