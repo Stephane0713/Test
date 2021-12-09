@@ -3,8 +3,10 @@ name: Release with Git Release
 on:
   push:
     tags:
-    - "v[0-9]+.[0-9]+.[0-9]+"
-    - name: Release
-      uses: docker://antonyurchenko/git-release:latest
-      with:
-        args: build/*.zip
+      "v[0-9]+.[0-9]+.[0-9]+"
+    name: Release
+    uses: docker://antonyurchenko/git-release:latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      args: build/*.zip
