@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [12.x]
     
     steps:
     - uses: actions/checkout@v2
@@ -29,3 +29,5 @@ jobs:
         
     - name: Release Action
       uses: plutotcool/release@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.KEY }}
