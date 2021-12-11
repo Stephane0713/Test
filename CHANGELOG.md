@@ -2,7 +2,7 @@
 
 ### Added
 
-- Glob pattern support
+- Test
 - Unit Tests
 - Log version
 
