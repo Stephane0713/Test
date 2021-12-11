@@ -14,6 +14,6 @@ jobs:
     - name: Git Release
       uses: anton-yurchenko/git-release@v4.1.2
       env:
-        GITHUB_TOKEN: ${{ secrets.KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         args: build/*.zip
