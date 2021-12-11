@@ -26,10 +26,3 @@ jobs:
       run: |
         npm install
         npx webpack
-
-    - name: Git Release
-      uses: anton-yurchenko/git-release@v4.1.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.KEY }}
-      with:
-        args: build/*.zip
