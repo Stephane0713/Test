@@ -29,5 +29,5 @@ jobs:
         
     - name: Release Action
       uses: plutotcool/release@v1.0.0
-      env:
-        GITHUB_TOKEN: ${{ secrets.KEY }}
+      with:
+        github_token:  ${{ secrets.GITHUB_TOKEN }}
