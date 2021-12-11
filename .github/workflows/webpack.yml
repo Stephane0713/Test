@@ -26,8 +26,3 @@ jobs:
       run: |
         npm install
         npx webpack
-        
-    - name: Release Action
-      uses: plutotcool/release@v1.0.0
-      with:
-        github_token:  ${{ secrets.GITHUB_TOKEN }}
